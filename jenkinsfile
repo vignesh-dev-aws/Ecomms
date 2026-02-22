@@ -36,7 +36,7 @@ pipeline {
         script {
           withCredentials([
             usernamePassword(
-              credentialsId: 'jenkins_dockerhub',
+              credentialsId: 'dockerhub',
               usernameVariable: 'DOCKER_USER',
               passwordVariable: 'DOCKER_PASS'
             )
